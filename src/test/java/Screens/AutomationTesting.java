@@ -18,7 +18,7 @@ public class AutomationTesting extends BasePage {
         driver.get("https://demo.automationtesting.in/Index.html");
     }
 
-    public void enterEmailStartedScreen(){
+    public void enterEmailStartScreen(){
         sendKeysToElement(By.id("email"),email);
         clickElement(By.id("enterimg"));
     }

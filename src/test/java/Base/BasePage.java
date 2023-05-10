@@ -6,7 +6,6 @@ import org.openqa.selenium.WebElement;
 
 public class BasePage {
     private static WebDriver driver = DriverSingleton.getDriverInstance();
-
     public WebElement getWebElement(By by){
         WebElement element;
         element = driver.findElement(by);
@@ -19,10 +18,4 @@ public class BasePage {
     public void sendKeysToElement(By by, String text){
         driver.findElement(by).sendKeys(text);
     }
-
-    public void waitForElementToBeClickable(By by){
-
-    }
-
-
 }
