@@ -1,8 +1,9 @@
 package Screens;
+import Base.BasePage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-public class Amazon {
+public class Amazon extends BasePage {
 
     private WebDriver driver;
     public Amazon(WebDriver driver){
@@ -14,16 +15,14 @@ public class Amazon {
     }
 
     public void writeInSearch(){
-        driver.findElement(By.id("twotabsearchtextbox")).sendKeys("laptop");
+        sendKeysToElement(By.id("twotabsearchtextbox"),"laptop");
     }
 
     public void clickOnSearch(){
-        driver.findElement(By.id("nav-search-submit-button")).click();
+        clickElement(By.id("nav-search-submit-button"));
     }
 
     public void clickOnAnythingFromSearch(){
-        driver.findElement(By.className("s-image")).click();
+        clickElement(By.className("s-image"));
     }
-
 }
-

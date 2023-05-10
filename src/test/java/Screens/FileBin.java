@@ -1,10 +1,11 @@
 package Screens;
 
+import Base.BasePage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 
-public class FileBin {
+public class FileBin extends BasePage {
 
     private WebDriver driver;
     public FileBin(WebDriver driver){
@@ -16,7 +17,7 @@ public class FileBin {
     }
 
     public void uploadFile(){
-        driver.findElement(By.id("fileField")).sendKeys("C:\\Users\\user\\Desktop\\22.txt");
+        sendKeysToElement(By.id("fileField"),"C:\\Users\\user\\Desktop\\22.txt");
     }
 
     public void printSize(){

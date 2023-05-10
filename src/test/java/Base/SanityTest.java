@@ -1,10 +1,6 @@
 package Base;
 
-
-import Screens.Amazon;
-import Screens.AutomationTesting;
-import Screens.FileBin;
-import Screens.Google;
+import Screens.*;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
@@ -50,8 +46,23 @@ public class SanityTest {
     public void AutomationTesting(){
         AutomationTesting automationTesting = new AutomationTesting(driver);
         automationTesting.openWebsite();
-        automationTesting.enterEmail();
+        automationTesting.enterEmailStartedScreen();
+        automationTesting.setFirstNameRegister();
+        automationTesting.setLastNameRegister();
+        automationTesting.setAddressRegister();
+        automationTesting.setEmailAddressRegister();
+        automationTesting.setPhoneRegister();
+        automationTesting.setGenderRegister();
+        automationTesting.setHobbiesRegister();
+        automationTesting.setLanguagesRegister();
+        automationTesting.setSkillsRegister();
+        automationTesting.setCountryRegister();
+        automationTesting.setDateOfBirthRegister();
+        automationTesting.setPasswordRegister();
+        automationTesting.uploadPhotoRegister();
+        automationTesting.pressSumbitButtonRegister();
     }
+
 
 
 }

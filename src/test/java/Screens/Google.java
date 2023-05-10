@@ -1,10 +1,11 @@
 package Screens;
 
+import Base.BasePage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 
-public class Google {
+public class Google extends BasePage {
 
     WebDriver driver;
     public Google(WebDriver driver){
@@ -22,7 +23,7 @@ public class Google {
     }
 
     public void clickOnSearch(){
-        driver.findElement(By.name("btnK")).click();
+        clickElement(By.id("btnK"));
     }
 
     public void printResult(){
