@@ -53,7 +53,7 @@ public class AutomationTesting extends BasePage {
 
     public void setHobbiesRegister(){
         clickElement(By.id("checkbox1"));
-        clickElement(By.id("checkbox3"));
+        clickElement(By.id("checkbox2"));
     }
 
     public void setLanguagesRegister(){

@@ -46,7 +46,7 @@ public class SanityTest {
     public void AutomationTesting(){
         AutomationTesting automationTesting = new AutomationTesting(driver);
         automationTesting.openWebsite();
-        automationTesting.enterEmailStartedScreen();
+        automationTesting.enterEmailStartScreen();
         automationTesting.setFirstNameRegister();
         automationTesting.setLastNameRegister();
         automationTesting.setAddressRegister();
