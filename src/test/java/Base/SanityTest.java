@@ -63,6 +63,11 @@ public class SanityTest {
         automationTesting.pressSumbitButtonRegister();
     }
 
+    @Test
+    public void CoinRate(){
+        CoinRate coinRate = new CoinRate();
+        coinRate.printILS_USDValue();
+    }
 
 
 }
