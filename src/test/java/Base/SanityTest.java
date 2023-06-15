@@ -67,6 +67,7 @@ public class SanityTest {
     public void CoinRate(){
         CoinRate coinRate = new CoinRate();
         coinRate.printILS_USDValue();
+        coinRate.printILS_EURValue();
     }
 
 
