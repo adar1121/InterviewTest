@@ -11,7 +11,7 @@ public class Amazon extends BasePage {
     }
 
     public void openWebsite(){
-        driver.get("https://www.Amazon.com");
+        driver.get(AMAZON_WEBSITE);
     }
 
     public void writeInSearch(){

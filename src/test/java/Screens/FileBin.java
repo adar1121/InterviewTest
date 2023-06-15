@@ -13,7 +13,7 @@ public class FileBin extends BasePage {
     }
 
     public void openWebsite(){
-        driver.get("https://filebin.net/");
+        driver.get(FILEBIN_WEBSITE);
     }
 
     public void uploadFile(){

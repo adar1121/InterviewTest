@@ -18,4 +18,8 @@ public class BasePage {
     public void sendKeysToElement(By by, String text){
         driver.findElement(by).sendKeys(text);
     }
+
+    public final String FILEBIN_WEBSITE = "https://filebin.net/";
+    public final String AMAZON_WEBSITE = "https://www.Amazon.com";
+    public final String GOOGLE_WEBSITE = "https://www.google.com";
 }

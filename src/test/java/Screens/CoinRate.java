@@ -18,7 +18,7 @@ public class CoinRate extends BasePage{
         JSONObject dataResults = mainJsonObject.getJSONObject("data");
         JSONObject insideILS = dataResults.getJSONObject("ILS");
         double value = insideILS.getDouble("value");
-        System.out.print("1 ILS = " + value);
+        System.out.println("1 ILS = " + value);
     }
     public void printILS_USDValue(){
         Request request = new Request.Builder()

@@ -1,4 +1,4 @@
-package Screens;
+package Screens.AutomationTesting;
 
 import Base.BasePage;
 import org.openqa.selenium.By;
@@ -6,12 +6,12 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.Select;
 
-public class AutomationTesting extends BasePage {
+public class Register extends BasePage {
 
 
     private WebDriver driver;
     private String email = "moti123@gmail.com";
-    public AutomationTesting(WebDriver driver){
+    public Register(WebDriver driver){
         this.driver = driver;
     }
     public void openWebsite(){

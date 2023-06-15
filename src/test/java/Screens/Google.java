@@ -13,7 +13,7 @@ public class Google extends BasePage {
     }
 
     public void openWebSite(){
-        driver.get("https://www.google.com");
+        driver.get(GOOGLE_WEBSITE);
     }
 
     public void searchInGoogle(){

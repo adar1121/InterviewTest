@@ -1,6 +1,7 @@
 package Base;
 
 import Screens.*;
+import Screens.AutomationTesting.Register;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
@@ -44,23 +45,23 @@ public class SanityTest {
 
     @Test
     public void AutomationTesting(){
-        AutomationTesting automationTesting = new AutomationTesting(driver);
-        automationTesting.openWebsite();
-        automationTesting.enterEmailStartScreen();
-        automationTesting.setFirstNameRegister();
-        automationTesting.setLastNameRegister();
-        automationTesting.setAddressRegister();
-        automationTesting.setEmailAddressRegister();
-        automationTesting.setPhoneRegister();
-        automationTesting.setGenderRegister();
-        automationTesting.setHobbiesRegister();
-        automationTesting.setLanguagesRegister();
-        automationTesting.setSkillsRegister();
-        automationTesting.setCountryRegister();
-        automationTesting.setDateOfBirthRegister();
-        automationTesting.setPasswordRegister();
-        automationTesting.uploadPhotoRegister();
-        automationTesting.pressSumbitButtonRegister();
+        Register register = new Register(driver);
+        register.openWebsite();
+        register.enterEmailStartScreen();
+        register.setFirstNameRegister();
+        register.setLastNameRegister();
+        register.setAddressRegister();
+        register.setEmailAddressRegister();
+        register.setPhoneRegister();
+        register.setGenderRegister();
+        register.setHobbiesRegister();
+        register.setLanguagesRegister();
+        register.setSkillsRegister();
+        register.setCountryRegister();
+        register.setDateOfBirthRegister();
+        register.setPasswordRegister();
+        register.uploadPhotoRegister();
+        register.pressSumbitButtonRegister();
     }
 
     @Test
