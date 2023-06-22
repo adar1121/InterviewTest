@@ -15,7 +15,7 @@ public class Register extends BasePage {
         this.driver = driver;
     }
     public void openWebsite(){
-        driver.get("https://demo.automationtesting.in/Index.html");
+        driver.get(AUTOMATION_WEBSITE);
     }
 
     public void enterEmailStartScreen(){

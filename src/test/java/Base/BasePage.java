@@ -22,4 +22,6 @@ public class BasePage {
     public final String FILEBIN_WEBSITE = "https://filebin.net/";
     public final String AMAZON_WEBSITE = "https://www.Amazon.com";
     public final String GOOGLE_WEBSITE = "https://www.google.com";
+
+    public final String AUTOMATION_WEBSITE = "https://demo.automationtesting.in/Index.html";
 }
